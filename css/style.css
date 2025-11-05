@@ -172,3 +172,39 @@ hr {
 .aplayer-title {
 	color: #222222
 }
+
+/* 防止名人名言溢出屏幕 */
+chizaobook {
+	max-width: calc(100vw - 250px) !important;
+	word-wrap: break-word !important;
+	word-break: break-all !important;
+	overflow-wrap: break-word !important;
+	white-space: normal !important;
+	display: block !important;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+}
+
+.mdui-toolbar-spacer {
+	max-width: calc(100vw - 250px) !important;
+	overflow: hidden !important;
+	flex: 1 1 auto !important;
+	min-width: 0 !important;
+}
+
+.mdui-toolbar {
+	overflow: hidden !important;
+	width: 100% !important;
+	box-sizing: border-box !important;
+}
+
+@media (max-width: 768px) {
+	chizaobook {
+		max-width: calc(100vw - 150px) !important;
+		font-size: 0.9em !important;
+	}
+	
+	.mdui-toolbar-spacer {
+		max-width: calc(100vw - 150px) !important;
+	}
+}
